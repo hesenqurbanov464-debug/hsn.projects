@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+  <meta charset="UTF-8">
+  <title>Arduino Layihələrim</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>🔧 Arduino Layihələrim</h1>
+    <p>Kiçik elektronika və kodlama layihələri</p>
+  </header>
+
+  <section class="card">
+    <h2>💡 LED Blink</h2>
+    <p>Arduino ilə LED-in yanıb-sönməsi layihəsi.</p>
+  </section>
+
+  <section class="card">
+    <h2>🔘 Button LED Control</h2>
+    <p>Düymə basıldıqda LED yanır və sönür.</p>
+  </section>
+
+  <section class="card">
+    <h2>📡 Ultrasonic Sensor</h2>
+    <p>HC-SR04 ilə məsafə ölçmə layihəsi.</p>
+  </section>
+
+  <!-- 🚀 ARDUINO KOD BÖLMƏSİ -->
+  <section class="card code-box">
+    <h2>💻 Arduino Kod: LED Blink</h2>
+
+    <pre>
+int led = 13;
+
+void setup() {
+  pinMode(led, OUTPUT);
+}
+
+void loop() {
+  digitalWrite(led, HIGH);
+  delay(1000);
+  digitalWrite(led, LOW);
+  delay(1000);
+}
+    </pre>
+  </section>
+
+  <section class="card code-box">
+    <h2>💻 Arduino Kod: Button LED</h2>
+
+    <pre>
+int button = 2;
+int led = 13;
+
+void setup() {
+  pinMode(button, INPUT);
+  pinMode(led, OUTPUT);
+}
+
+void loop() {
+  if (digitalRead(button) == HIGH) {
+    digitalWrite(led, HIGH);
+  } else {
+    digitalWrite(led, LOW);
+  }
+}
+    </pre>
+  </section>
+
+  <footer>
+    <p>© 2026 Arduino Projects</p>
+  </footer>
+
+</body>
+</html>
