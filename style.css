@@ -1,0 +1,13 @@
+.code-box {
+  background: #0b1220;
+  border: 1px solid #38bdf8;
+}
+
+pre {
+  text-align: left;
+  background: #000;
+  padding: 10px;
+  border-radius: 8px;
+  overflow-x: auto;
+  color: #00ff99;
+}
